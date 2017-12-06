@@ -1,0 +1,5 @@
+Dark blue #42596b
+Light blue #56bfec
+Text blue #1e4352
+Text body #595959
+Yellow nav #ffcf5c
