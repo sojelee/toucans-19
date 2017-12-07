@@ -15,9 +15,9 @@
 
     .robot {
       
-      width:400px;
+      width: 440px;
       height: 400px;
-
+      padding-top: 60px;
     }
     
     .btnimg {
