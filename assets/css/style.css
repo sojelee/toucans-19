@@ -1,80 +1,63 @@
 section {
-        min-height: 420px;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-flow: row;
-        background-color: #55C0EC;
-        align-items:center
-        justify-content:center;
-        padding-top: 20px;
-        
+         min-height: 420px;
+         margin: 0;
+         padding: 0;
+         background-color: #55C0EC;
+         padding-top: 20px;        
     }
- 
-    section > description {
-        
-        
-        flex: 1 50%;
-       
-        text-align:center;
-
+    .container-flex {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
 
-section > robot {
-      flex: 1 50%;
-       
-}
- 
-  /* Too narrow to support three columns */
-    @media all and (max-width: 640px) {
-        section, #page {
-            flex-direction: column;
-        }
-
-        section > description, section > robot {
-        /* Return them to document order */
-            order: 0;
-        }
-  
+    .description {
+      
+      width:440px;
+      height:400px;
+      text-align: center;
     }
 
-    .button {
-    background-color:#fff;
-    border: none;
-    color: #000;
-    height: 80px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    cursor: pointer;
-    width:300px;
-    border-radius: 4px;
-}
+    .robot {
+      
+      width:400px;
+      height: 400px;
 
-  .btnimg {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.slogan{
-  color: #fff;
-  font-size: 1.45rem;  
-}
+    }
+    
+    .btnimg {
+      position: relative;
+      top: 50%;
+      right:5px;
+      transform: translateY(-50%);
+   }
+    .slogan{
+     margin-top:20px;
+     color: #fff;
+     font-size: 1.45rem;  
+  }
 
-.title {
+h1 {
     color: #1D4352;
     font-size: 5rem;
     letter-spacing: -.1875rem;
     line-height: 1;
     margin-bottom: 2rem;
 }
-#descr {
-  height: 400px;
-  width: 400px;
-  text-align:center;
-}
-#robot {
-  height: 400px;
-  width: 400px
+
+.button {
+  margin-top:10px;
+  background-color:#fff;
+  border: none;
+  color: #000;
+  height: 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  cursor: pointer;
+  width:300px;
+  border-radius: 4px;
 }
