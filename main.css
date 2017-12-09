@@ -5,6 +5,9 @@ html, body {
   background-color: #fafafa;
 }
 
+/*NAVBAR SECTION
+------------------*/
+
 header {
   background-color: #42596b;
   font-family: Signika, Roboto, Helvetica, Arial, sans-serif;
@@ -38,6 +41,9 @@ header nav ul li a {
 header nav ul li a:hover {
   color: white;
 }
+
+/*MIDDLE SECTION
+------------------*/
 
 .content {
   background-color: #56bfec;
@@ -132,6 +138,9 @@ h1 {
   padding: 20px;
 }
 
+/*START-USING SECTION
+------------------*/
+
 .start-using-section{
   padding: 16px;
   display: flex;
@@ -188,8 +197,6 @@ h1 {
   background-color: rgba(0, 0, 0, .7);
 }
 
-
-
 .start-using a:hover img {
   transform: scale(1.5) rotate(18deg);
 }
@@ -226,7 +233,38 @@ h1 {
   height: 3px;
 }
 
+/*FOOTER SECTION
+------------------*/
+
+footer {
+  background-color: #40596b;
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+}
+
+.footer-container {
+  padding: 0 16px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-container p {
+  margin: 0 0 0.25rem 0;
+  font-family: Signika, cursive;
+  font-size: 0.825rem;
+  line-height: 1.5;
+}
+
+.footer-container p a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
 @media only screen and (max-width: 420px) {
+
+  /*NAVBAR SECTION
+  ------------------*/
+
   header nav {
     padding: 0 16px 0 16px;
   }
@@ -239,11 +277,22 @@ h1 {
     margin-right: 0px;
   }
 
+  /*START-USING SECTION
+  ------------------*/
+
   .undertitle-h3 {
     width: 300px;
   }
 
   .start-using p {
     max-width: 320px;
+  }
+
+  /*FOOTER SECTION
+  ------------------*/
+
+  .footer-container p {
+    width: 200px;
+    margin-bottom: 1rem;
   }
 }
