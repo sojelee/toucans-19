@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
+  background-color: #fafafa;
 }
 
 header {
@@ -40,7 +41,7 @@ header nav ul li a:hover {
 
 .content {
   background-color: #56bfec;
-  height: 2000px;
+  height: 600px;
 }
 
 .container-flex {
@@ -129,4 +130,120 @@ h1 {
   justify-content: space-around;
   align-items: center;
   padding: 20px;
+}
+
+.start-using-section{
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.start-using {
+  min-width: 300px;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.start-using p {
+  text-align: center;
+  min-width: 300px;
+  max-width: 536px;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-family: Signika, cursive;
+  font-weight: 300;
+  color: rgba(0,0,0,.75);
+  margin: 0 0 16px 0;
+}
+
+.start-using a {
+  min-width: 268px;
+  width: 268px;
+  padding: 16px;
+  border-radius: 4px;
+  margin-left: 5rem auto;
+  background-color: #40596b;
+  font-size: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin: 64px 118px 80px 118px;
+  transition: .3s ease-in-out;
+}
+
+.start-using a img {
+  margin-right: 16px;
+  width: 2.5rem;
+  transition: transform .3s ease-in-out;
+}
+
+.start-using a:hover, .start-using a:focus{
+  transform: scale(0.98);
+  background-color: rgba(0, 0, 0, .7);
+}
+
+
+
+.start-using a:hover img {
+  transform: scale(1.5) rotate(18deg);
+}
+
+.start-using a span {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Signika, cursive;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+.strong {
+  font-weight: 600;
+}
+
+.undertitle-h3 {
+  text-align: center;
+  min-width: 300px;
+  letter-spacing: -.125rem;
+  margin: 16px 16px 48px 16px;
+  color: rgba(0,0,0,.75);
+  font-family: Signika,cursive;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.undertitle-h3::after {
+  position: absolute;
+  left: 50%;
+  transform: translate(-80px, 2.9rem);
+  background-color: #55c0ec;
+  content: "";
+  width: 160px;
+  height: 3px;
+}
+
+@media only screen and (max-width: 420px) {
+  header nav {
+    padding: 0 16px 0 16px;
+  }
+
+  header nav ul {
+    padding: 0px;
+  }
+
+  header nav ul li:last-child {
+    margin-right: 0px;
+  }
+
+  .undertitle-h3 {
+    width: 300px;
+  }
+
+  .start-using p {
+    max-width: 320px;
+  }
 }
