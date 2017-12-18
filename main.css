@@ -43,18 +43,119 @@ header nav ul li a:hover {
   color: white;
 }
 
-/*MIDDLE SECTION
+/*HOME SECTION
 ------------------*/
+
 .homesection {
    background:#56bfec;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem;
+   min-height: calc(100vh - 12rem);
 }
 
-.homesection .container--flex {
-  -margin:58px;
-
+.home-container {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 1168px;
 }
 
-.homesection .container {
+.home-Description {
+    width: calc(50% - 2.5rem);
+    min-width: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: calc(50% - 2.5rem);
+    margin: 1rem;
+}
+
+.home-Description h1 {
+   margin-top: 0;
+   font-size: 5rem;
+   letter-spacing: -.1875rem;
+   line-height: 1;
+   color: #1D4352;
+   font-weight: 300;
+   margin-bottom: 2rem;
+}
+
+.home-Description p {
+    max-width: 500px;
+    color: #fff;
+    font-size: 1.675rem;
+    font-weight: 300;
+    line-height: 1.25;
+    margin: 0 0 2rem 0;
+}
+
+
+.home-Robot {
+    width: calc(50% - 2.5rem);
+    max-height: 400px;
+    min-width: 320px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.home-Robot img {
+    width: calc(100% - 19.5px);
+    max-width: 400px;
+    max-height: 400px;
+    height: auto;
+}
+
+/* BUTTON ____________ */
+
+.home-Description a {
+  min-width: 268px;
+  width: 268px;
+  padding: 16px;
+  border-radius: 4px;
+  margin-left: 5rem auto;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: white;
+  font-size: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 0;
+  transition: .3s ease-in-out;
+}
+
+.home-Description a img {
+  margin-right: 16px;
+  width: 2.5rem;
+  transition: transform .3s ease-in-out;
+}
+
+.home-Description a:hover, .home-Description a:focus{
+  transform: scale(0.98);
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.home-Description a:hover img {
+  transform: scale(1.5) rotate(18deg);
+}
+
+.home-Description a span {
+  font-family: Signika, cursive;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+/* .homesection .container {
   display:flex;
   flex-wrap:wrap;
   font-size: 1.25rem;
@@ -101,17 +202,17 @@ header nav ul li a:hover {
   margin: 60px 118px 60px 118px;
   transition: .3s ease-in-out;
   transform: translateY(-2rem);
-   
+
 }
 
 .cardDescription h1{
    margin-top: 0;
    font-size: 5rem;
    letter-spacing: -.1875rem;
-   line-height: 1; 
+   line-height: 1;
    color:#1D4352;
    margin-bottom: 2rem;
-   
+
 }
 
 .cardDescription p{
@@ -121,7 +222,7 @@ header nav ul li a:hover {
      min-width: 400px;
      line-height: 1.5;
      font-size: 1.65rem;
-     text-align:center;   
+     text-align:center;
 }
 .cardDescription a img{
   margin-right: 16px;
@@ -136,11 +237,43 @@ header nav ul li a:hover {
 
 .cardDescription a:hover img {
   transform: scale(1.5) rotate(18deg);
-}
+} */
 
-/*MIDDLE SECTION
+/*ABOUT SECTION
 ------------------*/
 
+.half-container{
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  margin: 1rem;
+  font-size: 1.25rem;
+  align-items: center;
+
+}
+.about-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+}
+
+.about-half-1{
+  flex: 1;
+}
+.about-half-2{
+  flex: 1;
+}
+.about-full{
+  display: flex;
+  font-size: 1.25rem;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
 
 /*START-USING SECTION
 ------------------*/
@@ -243,7 +376,7 @@ header nav ul li a:hover {
 
 
 .how-it-works {
-  
+
   font-family: Signika, Roboto, Helvetica, Arial, sans-serif;
   width:100%;
   background-color:#90DDAA;
@@ -255,8 +388,8 @@ header nav ul li a:hover {
    display:flex;
    flex-direction:column;
    align-items:center;
-  
-    
+
+
 }
 
 
@@ -269,11 +402,11 @@ header nav ul li a:hover {
 }
 
 .how-it-works .cardDiv{
-   
+
     height:500px;
     width:350px;
     margin:20px;
-    border-radius:8px;    
+    border-radius:8px;
 }
 
 .how-it-works .cardImage{
@@ -285,7 +418,7 @@ header nav ul li a:hover {
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  
+
 }
 
 .how-it-works .hwcardDescription{
@@ -299,28 +432,28 @@ header nav ul li a:hover {
   padding-right:15px;
   text-align:center;
   line-height: 30px;
-}   
+}
 
 .how-it-works .container h1 {
   font-weight:normal;
   margin-bottom:0;
   color: #24372A;
   font-size:36px;
- 
+
 }
 
 .how-it-works .div_underline {
-  
+
   border-top:3px solid #55C0EC;
   width:140px;
- 
+
 }
 
 .how-it-works .ticket {
  color:red;
  padding:5px;
  letter-spacing: 0.1em;
- 
+
 }
 
 /* HOW IT WORKS SECTION
@@ -390,16 +523,4 @@ footer {
     width: 200px;
     margin-bottom: 1rem;
   }
-}
-
-
-a:hover{
-  height: 85px;
-  width: 305px;
-  transition-property: height;
-  transition-duration: 3s;
-  transition-delay: 2s;
-}
-h1 {
-  font-weight: normal;
 }
