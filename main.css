@@ -1,9 +1,13 @@
 html, body {
-  margin: 0;
-  padding: 0;
-  -webkit-tap-highlight-color: transparent;
-  background-color: #fafafa;
-  font-family: Signika,Roboto,Helvetica,Arial,sans-serif;
+
+    background-color: #fafafa;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: rgba(0,0,0,.75);
+    font-family: Signika,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
 }
 
 /*NAVBAR SECTION
@@ -155,70 +159,6 @@ header nav ul li a:hover {
   font-size: 28px;
 }
 
-/* .homesection .container {
-  display:flex;
-  flex-wrap:wrap;
-  font-size: 1.25rem;
-  margin: 0 auto;
-  padding: 0 1rem;
-  justify-content:center;
-}
-
-.homesection .container .cardDescription {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align: center;
-  width:544px;
-  height: 480px;
-  transform: translateY(4rem);
-}
-
-
-.homesection .container .cardRobot {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  width:100%;
-  width: 544px;
-  height: 480px;
-}
-
-.cardDescription a{
-  min-width: 268px;
-  width: 268px;
-  padding: 16px;
-  border-radius: 4px;
-  background-color: #fff;
-  font-size: 1.75rem;
-  display: flex;
-  min-height:40px;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #5F5F5F;
-  margin: 60px 118px 60px 118px;
-  transition: .3s ease-in-out;
-  transform: translateY(-2rem);
-
-}
-
-.cardDescription h1{
-   margin-top: 0;
-   font-size: 5rem;
-   letter-spacing: -.1875rem;
-   line-height: 1;
-   color:#1D4352;
-   margin-bottom: 2rem;
-
-}
-
-<<<<<<< HEAD
-/* ABOUT SECTION 
-----------------*/
-
 .container-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -228,7 +168,7 @@ header nav ul li a:hover {
   margin: 0 auto;
   min-height: 50vh;
   line-height: 1.5;
-=======
+}
 .cardDescription p{
      margin-bottom: 5px;
      color: #fff;
@@ -263,8 +203,7 @@ header nav ul li a:hover {
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
   margin: 1rem;
->>>>>>> a3249a4b708d4a643f7a9a01e179f68922edeff1
-  font-size: 1.25rem;
+ font-size: 1.25rem;
 }
 strong {
   font-weight: bold;
@@ -397,88 +336,133 @@ div {
 /* HOW IT WORKS SECTION
 ------------------*/
 
-
-.how-it-works {
-
-  font-family: Signika, Roboto, Helvetica, Arial, sans-serif;
-  width:100%;
-  background-color:#90DDAA;
-  height: 652px;
-
+.features {
+  background-color: #90ddaa;
 }
 
-.how-it-works   .container {
-   display:flex;
-   flex-direction:column;
-   align-items:center;
-
-
+.page {
+    min-height: 100vh;
+    padding: 1rem;
 }
 
 
-.how-it-works .container--inner {
-
-   display:flex;
-   flex-wrap:wrap;
-   justify-content:center;
-   margin-top:30px;
+.container {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+    width: 100%;
+}
+.container--flex {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 
-.how-it-works .cardDiv{
-
-    height:500px;
-    width:350px;
-    margin:20px;
-    border-radius:8px;
+.container--flex>* {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 calc(50% - 2em);
+    flex: 0 1 calc(50% - 2em);
+    margin: 1rem;
+    min-width: 300px;
 }
 
-.how-it-works .cardImage{
-  background-color:#40596B;
-  height:75%;
-  width:100%;
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-
+* {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
 }
 
-.how-it-works .hwcardDescription{
-  position:relative;
-  padding-top:20px;
-  background-color:#FAFAFA;
-  height:20%;
-  width:320px;
-  font-size:20px;
-  padding-left:15px;
-  padding-right:15px;
-  text-align:center;
-  line-height: 30px;
+.page__title {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    font-size: 2.5rem;
+    letter-spacing: -.125rem;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
 }
 
-.how-it-works .container h1 {
-  font-weight:normal;
-  margin-bottom:0;
-  color: #24372A;
-  font-size:36px;
-
+.page__title:after {
+    background-color: #55c0ec;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 160px;
+}
+.page__third {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 calc(33.33333% - 2rem);
+    flex: 1 0 calc(33.33333% - 2rem);
+}
+.card {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  background-color: #40596b;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  padding: 0;
+  text-align: center;
+  }
+h3 {
+   font-weight: 300;
+}
+  
+}
+.reveal-item {
+    opacity: 0;
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+    -webkit-transition: opacity 1.5s cubic-bezier(.6,-.5,0,.75),-webkit-transform 1.5s cubic-bezier(.6,-.5,0,.75);
+    transition: opacity 1.5s cubic-bezier(.6,-.5,0,.75),-webkit-transform 1.5s cubic-bezier(.6,-.5,0,.75);
+    transition: opacity 1.5s cubic-bezier(.6,-.5,0,.75),transform 1.5s cubic-bezier(.6,-.5,0,.75);
+    transition: opacity 1.5s cubic-bezier(.6,-.5,0,.75),transform 1.5s cubic-bezier(.6,-.5,0,.75),-webkit-transform 1.5s cubic-bezier(.6,-.5,0,.75);
+}
+.reveal-item--visible {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.card__description {
+    background-color: #fafafa;
+    padding: 1rem;
+}
+.card__img {
+    margin: 4rem 0;
+    width: 224px;
 }
 
-.how-it-works .div_underline {
 
-  border-top:3px solid #55C0EC;
-  width:140px;
 
+code {
+    background-color: rgba(0,0,0,.05);
+    border-radius: 2px;
+    color: crimson;
+    font-size: 1rem;
+    margin: 0;
+    padding: .2rem;
 }
-
-.how-it-works .ticket {
- color:red;
- padding:5px;
- letter-spacing: 0.1em;
-
-}
-
 /* HOW IT WORKS SECTION
 ------------------*/
 
